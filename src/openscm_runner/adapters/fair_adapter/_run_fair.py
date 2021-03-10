@@ -364,7 +364,7 @@ def _process_output(fair_output, output_vars, factors):  # pylint: disable=R0915
     out = ({}, {}, nt)
     for key in output_vars:
         if key not in data:
-#            LOGGER.warning("%s not available from FaIR", key)
+            #            LOGGER.warning("%s not available from FaIR", key)
             continue
 
         out[0][key] = data[key]
